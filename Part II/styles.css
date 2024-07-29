@@ -1,0 +1,346 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Resetting default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Setting body font-family and font-size */
+body {
+  font-family: 'Poppins';
+  font-size: 30px;
+}
+
+/* Sticky header styles */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1000;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-weight:light;
+  letter-spacing: 5px;
+  font-size: 25px;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+nav ul li {
+  list-style-type: none;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #000;
+  background: #fff;
+  text-shadow: 0 0 10px rgba(147, 147, 147, 0.3);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* General button styles */
+button, .git_profile {
+  padding: 10px 30px; 
+  border-radius: 30px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.btn-1 button i {
+  margin-right: 5px;
+}
+
+.btn-1 button {
+  margin-right: 10px;
+}
+
+.btn-1 button:last-child {
+  margin-right: 0;
+}
+
+/* Portfolio button */
+.portfolio{
+  background-color: #000;
+  color: #fff;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none; 
+}
+
+.git_profile{
+  background-color: #fff;
+  color: #000;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none; 
+
+}
+.portfolio:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  color: #000;
+}
+
+.git_profile:hover{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background-color: #000;
+  color: #fff;
+}
+
+/* Home section */
+#home__section__ {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  margin-left: 100px;
+  margin-top: 150px;
+}
+
+img {
+  display: inline;
+  margin: auto;
+  width: 300px;
+  border-radius: 150px;
+}
+
+.home__section, .section_container {
+  margin: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Sticky header when scrolling */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.sticky .logo {
+  font-size: 20px; 
+}
+
+.sticky nav ul li a {
+  margin-left: 20px; 
+  font-size: 15px;
+}
+
+/* Section hover effect */
+.home__section:hover, .section_container:hover, span:hover {
+  text-decoration: underline #000;
+  box-shadow: 0.3s ease;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.home-section {
+  margin: auto;
+  padding-left: 90px;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+/* Greetings section */
+#home__content {
+  display: inline;
+  font-size: 20px;
+}
+
+.content-container {
+  margin: 50px;
+  display: flex;
+  color: #000;
+  padding: 15px;
+  margin-bottom: 5px;
+  line-height: 40px;
+}
+
+.content-container p {
+  text-align: auto;
+}
+
+.welcome-msg {
+  line-height: 40px;
+}
+
+.welcome-msg p {
+  margin-top: 20px;
+}
+
+.welcome-msg-1 p {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #000;
+  padding: 30px;
+  margin-top: -40px;
+  border-radius: 40px;
+  text-align: end;
+  line-height: 40px;
+}
+
+.section_container {
+  margin: 50px;
+  color: black;
+}
+
+/* About section */
+#about__section {
+  margin-top: 20px;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+span {
+  font-weight: bolder;
+}
+
+/* My Work section */
+#my__work__section {
+  margin-top: 20px;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.project__list {
+  margin-top: 40px;
+  color: black;
+}
+
+.project__list a {
+  text-decoration: none; 
+  color: black; 
+}
+
+/* Experience section */
+#experience {
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.skill {
+  margin-top: -40px;
+  margin-left: 50px;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+p i {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.section__container__sub,
+.section__container__sub__1 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: light;
+  color: rgb(124, 120, 120);
+  letter-spacing: 3px;
+}
+
+.section__container__sub {
+  margin-top: -40px;
+}
+
+.section__container__sub__1 {
+  margin-top: 40px;
+}
+
+/* Contacts section */
+#contact__section {
+  color: black;
+}
+
+.icons {
+  text-align: center;
+}
+
+.icons ul {
+  padding: 0;
+  margin: 0;
+  display: flex; 
+  justify-content: center; 
+}
+
+.icons ul li {
+  list-style-type: none;
+  margin: 0 10px; 
+}
+
+.icons ul li a {
+  text-decoration: none; 
+}
+
+.icons ul li a i {
+  justify-content: space-between;
+  font-size: 30px;
+  color: #000;
+}
+
+/* Media queries */
+@media only screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  nav {
+    margin-top: 20px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  nav ul li a {
+    margin: 0;
+  }
+}
